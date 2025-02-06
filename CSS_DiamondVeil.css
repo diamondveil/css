@@ -342,9 +342,6 @@ NAVBAR********************/
     right: 0;
 }
 
-
-
-
 .dv-nav-user {
   font-size: 10px;
   font-weight: bold;
@@ -571,41 +568,6 @@ a.dv-nav-home,
 }
 
 
-/*
-#fa_toolbar {
-  background: var(--a2);
-  border-bottom: 1px solid var(--a7);
-  font-size: 10px;
-}
-#fa_share,
-#fa_right {
-  font-size: 10px;
-}
-#fa_magnifier {
-  display: none !important;
-}
-#fa_search #fa_textarea {
-  background: var(--a1);
-  border-radius: 0;
-  border: 1px solid var(--a3);
-  padding: 3px !important;
-  height: auto !important;
-  color: var(--a6);
-  line-height: 100% !important;
-  text-indent: 5px !important;
-}
-#fa_toolbar #fa_magnifier,
-#fa_toolbar #fa_fb,
-#fa_toolbar #fa_twitter,
-#fa_toolbar #fa_gp,
-#fa_toolbar #fa_mail,
-#fa_toolbar #fa_rss,
-#fa_toolbar #fa_hide,
-#fa_toolbar_hidden #fa_show {
-  transform: scale(0.7);
-  margin: -2px;
-} */
- 
 /**************************
 TABLON********************/
 .dv-tab {
@@ -1743,11 +1705,11 @@ TEMAS***************************/
 
 .dv-postbody {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    overflow: visible; /* Evita que el overflow interfiera */
-    position: relative; /* Necesario para que sticky funcione */
-  /*  min-height: 100vh;  Asegura que el contenedor tenga suficiente altura */
+    overflow: visible; /* Permite que los elementos hijos sobresalgan */
+    position: relative; /* Necesario para que los elementos posicionados absolutamente se refieran a este contenedor */
 }
 
 .dv-post-title {
@@ -1897,6 +1859,8 @@ TEMAS***************************/
   top: 85px;
   margin-top: -46px;
   z-index: 1;
+      flex: 1;
+    order: 3; /* Asegura que .dv-postprofile esté al final */
 }
 
 .dv-postp-name a, .dv-postp-name a:visited, .dv-postp-name a:link {
@@ -3311,16 +3275,6 @@ body {
   margin-top: 0; /* El contenido del foro se posicionará inmediatamente debajo de la bienvenida */
 }
 
-.shinetext{
-    position: relative; /* Necesario para mantener el texto encima de la lluvia de diamantes */
-  z-index: 1; /* Asegura que el texto esté por encima de la lluvia */
-    font-size: 8rem; /* Tamaño del texto */
-  font-family: "Ephesis", serif; /* Fuente */
-  transition: 1.3s;
-  cursor: default;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(-72deg, transparent 0, transparent 5%, rgb(255 250 220), rgb(231 171 74), transparent 10%, transparent 100%);
-}
 .shine:hover{
   background-position: -140% 0;
 }
@@ -3337,15 +3291,3 @@ body {
   z-index: -1; /* Envía el video detrás del contenido */
   opacity: 0.4; /* Ajusta la transparencia si lo deseas */
 }
-
-/* Contenedor para la lluvia de diamantes */
-.rain-container {
-  position: absolute; /* Lo ponemos en posición absoluta para que quede encima de todo */
-  top: 0;
-  left: 0;
-  width: 100vh;
-  height: 100vh;
-  pointer-events: none; /* Para que los diamantes no interfieran con la interacción */
-  z-index: -1; /* Asegura que los diamantes estén detrás del texto */
-}
-
