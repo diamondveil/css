@@ -14,7 +14,6 @@
     font-style: normal;
 }
 
-
 /* Para evitar el desbordamiento de palabras largas */
 .dv-post .dv-postbody {
   word-wrap: break-word;         /* Permite que las palabras largas se dividan y ajusten dentro del contenedor */
@@ -23,9 +22,7 @@
   word-break: break-word;        /* Fuerza que las palabras largas se dividan si es necesario */
 }
 
-
-/***********************************
-COLORES****************************/
+/***********************************COLORES****************************/
 :root {
   --c1:#1a1a1a;
   --cb: #9896bb;
@@ -316,8 +313,7 @@ body {
 #cp-main {
   margin: 30px 0;
 }
-/**************************
-NAVBAR********************/
+/**************************NAVBAR********************/
 /* Barra de navegación */
 .dv-navabar {
   display: flex;
@@ -567,9 +563,7 @@ a.dv-nav-home,
     font-family: Arial, sans-serif;
 }
 
-
-/**************************
-TABLON********************/
+/**************************TABLON********************/
 .dv-tab {
   display: flex;
   flex-wrap: wrap;
@@ -836,8 +830,7 @@ TABLON********************/
   text-shadow: var(--t1);
 }
  
-/**********************************
-FOROS*****************************/
+/**********************************FOROS*****************************/
 .dv-cc {
   margin: 30px -31px;
 }
@@ -1073,8 +1066,7 @@ FOROS*****************************/
 .dv-dcr-img ~ .dv-dcr-links {
   margin-top: 8px;
 }
-/**********************************
-ESTADISTICAS**********************/
+/**********************************ESTADISTICAS**********************/
 #page-body {
   margin: 0;
 }
@@ -1225,8 +1217,7 @@ ESTADISTICAS**********************/
 .copyright a ~ a {
   margin-left: 5px;
 }
-/**********************************
-AFILIADOS**********************/
+/**********************************AFILIADOS**********************/
 .dv-afis {
   display: flex;
   flex-wrap: wrap;
@@ -1296,8 +1287,7 @@ AFILIADOS**********************/
   width: 150px;
   height: 80px;
 }
-/****************************
-LISTAS**********************/
+/****************************LISTAS**********************/
 .forumbg {
   margin: 0;
 }
@@ -1610,8 +1600,7 @@ h3::before,
   vertical-align: middle;
   color: var(--a5);
 }
-/********************************
-TEMAS***************************/
+/********************************TEMAS***************************/
 .dv-admin {
   margin: 30px -31px;
   display: flex;
@@ -1687,8 +1676,6 @@ TEMAS***************************/
   font-size: 17px;
 }
 
-
-
 .dv-post {
   display: flex;
   flex-direction: column; /* Título arriba */
@@ -1730,17 +1717,20 @@ TEMAS***************************/
   }
   
   .dv-post-title::after {
-    content: "";
+content: "";
     position: absolute;
-    top: 0;
+    top: -55px;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('https://imgur.com/kaAaZmK.png') center/cover no-repeat;
-    mix-blend-mode: soft-light; /* Permite que el fondo se mezcle con la imagen */
-    opacity: 1; /* Puedes ajustarlo si necesitas */
+    background: url(https://imgur.com/kaAaZmK.png);
+    mix-blend-mode: soft-light;
+    opacity: 1;
     z-index: 1;
-    pointer-events: none; /* Evita que interfiera con los clics */
+    pointer-events: none;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 600px;
 }
   
   .dv-post-title-bar {
@@ -1761,7 +1751,6 @@ TEMAS***************************/
 }
 
 /************* DISEÑO ESQUINAS **********/
-
 
 /***** Barra vertical en los posts ******/
 
@@ -1851,7 +1840,6 @@ TEMAS***************************/
   font-weight: bold;
   color: var(--t2); /* Color del texto del título */
 }
-
 
 .dv-postprofile {
   width: min-content;
@@ -2007,8 +1995,6 @@ TEMAS***************************/
     opacity: 1;
     transform: scale(1);
 }
-
-
 
 /***FIN HOVER AVATAR**/
 .dv-postp-img {
@@ -2384,8 +2370,7 @@ div .sceditor-button-mention div {
 #quick_reply .button2 {
   flex: 1;
 }
-/********************************
-VARIOS**************************/
+/********************************VARIOS**************************/
 #tabs + .panel.row3,
 #tabs + div * {
   margin: 0;
@@ -2593,8 +2578,7 @@ dl.codebox code {
   padding: 16px;
   transition: 0.3s;
 }
-/*******************************************
-MIEMBROS**********************************/
+/*******************************************MIEMBROS**********************************/
 .dv-box > p {
   white-space: nowrap;
 }
@@ -2672,8 +2656,7 @@ MIEMBROS**********************************/
   height: 100%;
   opacity: 0;
 }
-/*****************************
-MENSAJES PRIVADOS************/
+/*****************************MENSAJES PRIVADOS************/
 .dv-mp-acts {
   margin: 30px -31px;
   display: flex;
@@ -2911,8 +2894,7 @@ select {
   margin: 20px;
   text-align: center;
 }
-/**************************************
-PERFIL SIMPLE*************************/
+/**************************************PERFIL SIMPLE*************************/
 .dv-perfil {
   margin: 30px 0;
 }
@@ -3090,12 +3072,10 @@ PERFIL SIMPLE*************************/
 
 /*** Ocultar imágenes de icono hasta que el script cargue ***/
 
-
 /*
 #profile_field_8_1 {
     visibility: hidden;  
 }*/
-
 
 /***borde oscuro***/
 .dv-perfil-po a,
@@ -3218,8 +3198,7 @@ div .dv-chat *,
   letter-spacing: 0 !important;
   background: transparent !important;
 }
-/******************************
-Iconos Grupos*****************/
+/******************************Iconos Grupos*****************/
 .dv-gr a[href*="g3-"]::before {
   content: "\e934";
 }
@@ -3232,8 +3211,7 @@ Iconos Grupos*****************/
 .dv-gr a[href*="g6-"]::before {
   content: "\eb51";
 }
-/******************************
-IMAGENES**********************/
+/******************************IMAGENES**********************/
 /***Fondo***/
 .gradient-bg {
   z-index: -1;
