@@ -1,19 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=all');
-
 @font-face {
     font-family: 'Milky';
     src: url('https://raw.githubusercontent.com/diamondveil/Milky/main/Milky.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Zitter';
     src: url('https://raw.githubusercontent.com/diamondveil/Zitter/main/Zitter-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
 /* Para evitar el desbordamiento de palabras largas */
 .dv-post .dv-postbody {
   word-wrap: break-word;         /* Permite que las palabras largas se dividan y ajusten dentro del contenedor */
@@ -21,7 +18,6 @@
   white-space: normal;           /* Asegura que el texto no se quede en una sola línea */
   word-break: break-word;        /* Fuerza que las palabras largas se dividan si es necesario */
 }
-
 /***********************************COLORES****************************/
 :root {
   --c1:#1a1a1a;
@@ -46,33 +42,7 @@
   --gr2: linear-gradient(to right, #111213, rgb(41 41 59));
   --gr3: linear-gradient(to right, #111213, #2e3061);
 }
-.dv-chat img,
-.dv-perfil-aa a[href*="email"],
-.dv-perfil-aa img,
-.dv-simple-post-mp img,
-.dv-simple-post-aa img,
-.dv-mp-acts img,
-.codebox.hidecode > dt,
-#message-box > br,
-.dv-post-signature > br:nth-of-type(2),
-.dv-post-signature > br:nth-of-type(1),
-.dv-post-action a[href=""],
-.dv-post-men img,
-.dv-admin img,
-.pag-img,
-.dterm img,
-span.corners-top,
-span.corners-bottom,
-span.corners-top span,
-span.corners-bottom span,
-.dv-foro-desc > br,
-.dv-nav a[href*="/calendar"],
-.dv-nav a[href*="/faq"],
-.dv-nav a[href*="/search"],
-.dv-nav a[href="/"],
-.dv-nav a[href="/?tt=1"],
-.dv-user a::before,
-.dv-navabar img {
+.dv-chat img, .dv-perfil-aa a[href*="email"], .dv-perfil-aa img, .dv-simple-post-mp img, .dv-simple-post-aa img, .dv-mp-acts img, .codebox.hidecode > dt, #message-box > br, .dv-post-signature > br:nth-of-type(2), .dv-post-signature > br:nth-of-type(1), .dv-post-action a[href=""], .dv-post-men img, .dv-admin img, .pag-img, .dterm img, span.corners-top, span.corners-bottom, span.corners-top span, span.corners-bottom span, .dv-foro-desc > br, .dv-nav a[href*="/calendar"], .dv-nav a[href*="/faq"], .dv-nav a[href*="/search"], .dv-nav a[href="/"], .dv-nav a[href="/?tt=1"], .dv-user a::before, .dv-navabar img {
   display: none;
 }
 *,
@@ -301,10 +271,10 @@ body {
 #wrap {
   width: 1250px;
   margin: 50px auto;
- /* border: 1px solid var(--a7); */
-  background: var(--c1);
+  background: url(https://imgur.com/fMGXzxt.png);
   padding: 30px;
   min-width: 1000px;
+  background-size: 350px;
 }
 .panel {
   margin: 0;
@@ -479,15 +449,7 @@ a.dv-nav-home,
 }
 
 /* Eliminar iconos innecesarios de la toolbar */
-#fa_toolbar #fa_magnifier, 
-#fa_toolbar #fa_fb, 
-#fa_toolbar #fa_twitter, 
-#fa_toolbar #fa_gp, 
-#fa_toolbar #fa_mail, 
-#fa_toolbar #fa_rss, 
-#fa_toolbar #fa_hide, 
-#fa_toolbar_hidden #fa_show, 
-#fa_toolbar #fa_icon {
+#fa_toolbar #fa_magnifier, #fa_toolbar #fa_fb, #fa_toolbar #fa_twitter, #fa_toolbar #fa_gp, #fa_toolbar #fa_mail, #fa_toolbar #fa_rss, #fa_toolbar #fa_hide, #fa_toolbar_hidden #fa_show, #fa_toolbar #fa_icon {
     width: 0 !important;
     height: 0 !important;
 }
@@ -1893,6 +1855,21 @@ content: "";
     bottom: 15px;
 }
 
+.dv-post-award {
+border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    border: 2px solid #e3e3e3;
+    padding: 5px;
+    background-size: cover;
+    background: #e9e9e9d9;
+}
+
+div.award {
+border: 0 !important;
+}
+
 .dv-post-award .dv-tab-tt {
   border-top: 1px solid var(--a7);
   margin-top: 8px;
@@ -1935,6 +1912,26 @@ content: "";
 }
 .dv-post-award-src > .award > span {
   opacity: 0 !important;
+}
+
+.dv-perfil-awards {
+  border: 1px solid var(--a3);
+  background: var(--a2);
+  margin-top: 4px;
+}
+.dv-perfil-awards > b {
+  display: block;
+  background: var(--a3);
+  text-align: center;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+.dv-perfil-awards > div {
+  margin: 10px;
+  display: flex;
+  overflow: auto hidden;
 }
 
 /* Ocultar los íconos por defecto */
@@ -2316,16 +2313,7 @@ div .color_line {
   top: 16px !important;
   width: 100% !important;
 }
-.sceditor-button-farand,
-.sceditor-button-more,
-.sceditor-button-superscript,
-.sceditor-button-subscript,
-.sceditor-button-dailymotion,
-.sceditor-button-table,
-.sceditor-button-horizontalrule,
-.sceditor-button-time,
-.sceditor-button-date,
-.sceditor-button-headers {
+.sceditor-button-farand, .sceditor-button-more, .sceditor-button-superscript, .sceditor-button-subscript, .sceditor-button-dailymotion, .sceditor-button-table, .sceditor-button-horizontalrule, .sceditor-button-time, .sceditor-button-date, .sceditor-button-headers {
   display: none !important;
 }
 #quick_reply .button2 {
@@ -3045,25 +3033,7 @@ select {
   height: 80px;
   border-radius: 50%;
 }
-.dv-perfil-awards {
-  border: 1px solid var(--a3);
-  background: var(--a2);
-  margin-top: 4px;
-}
-.dv-perfil-awards > b {
-  display: block;
-  background: var(--a3);
-  text-align: center;
-  padding: 5px;
-  text-transform: uppercase;
-  font-size: 10px;
-  letter-spacing: 2px;
-}
-.dv-perfil-awards > div {
-  margin: 10px;
-  display: flex;
-  overflow: auto hidden;
-}
+
 .dv-utiss i {
   display: none !important;
 }
@@ -3077,120 +3047,13 @@ select {
     visibility: hidden;  
 }*/
 
-/***borde oscuro***/
-.dv-perfil-po a,
-.dv-perfil-scrl,
-.dv-perfil-ava,
-.dv-perfil-tt > div,
-select,
-#dv-mp-tabs a,
-.dv-mp-list-row,
-.dv-mp-list-h,
-.dv-simple-post-mp a,
-.dv-simple-post-name,
-.dv-simple-post-top,
-.dv-member-row,
-.dv-post-icon,
-.dv-post-men i,
-
-.dv-post-action a,
-
-.dv-admin > a,
-.dv-page-tt > i,
-.dv-page-aa,
-.dv-page-actions > a,
-.forumbg .row,
-.dv-t-row > *,
-.dv-foro-in > a,
-.dv-utiss > a,
-.dv-foro-desc,
-.dv-foro-lastpost,
-.dv-foro-stats,
-.dv-lastpost-avatar,
-.dv-foro-tt > *,
-.dv-tab-links > a,
-.dv-nav-user,
-.dv-navabar a {
-  background: var(--a1);
-  padding: 8px;
-  border: 1px solid var(--a3);
-}
+/**Borde Oscuro**/
+.dv-perfil-po a, .dv-perfil-scrl, .dv-perfil-ava, .dv-perfil-tt > div, select, #dv-mp-tabs a, .dv-mp-list-row, .dv-mp-list-h, .dv-simple-post-mp a, .dv-simple-post-name, .dv-simple-post-top, .dv-member-row, .dv-post-icon, .dv-post-men i, .dv-post-action a, .dv-admin > a, .dv-page-tt > i, .dv-page-aa, .dv-page-actions > a, .forumbg .row, .dv-t-row > *, .dv-foro-in > a, .dv-utiss > a, .dv-foro-desc, .dv-foro-lastpost, .dv-foro-stats, .dv-lastpost-avatar, .dv-foro-tt > *, .dv-tab-links > a, .dv-nav-user, .dv-navabar a { background: var(--a1); padding: 8px; border: 1px solid var(--a3); }
 /***borde claro***/
-.dv-perfil,
-#form_confirm,
-#frmAgreement,
-.dv-post-options,
-#postingbox,
-#preview,
-#dv-mp-tabs,
-.dv-mp-list,
-.dv-simple-profile,
-.dv-simple-post-in,
-.dv-mp-acts,
-.dv-box,
-#cp-main,
-#quick_reply,
-
-.dv-postbody,
-.dv-admin,
-.action-box,
-.dv-page-tt,
-.pagination,
-.forumbg,
-.dv-afis-eli,
-.dv-afis-pe > div,
-.dv-afis-cre,
-.copyright a,
-.dv-stats-st > div,
-.dv-stats-num,
-.dv-stats-gr,
-.dv-stats-tt,
-.dv-stats-img,
-.dv-utiss,
-.dv-foro,
-.dv-cc,
-.dv-t-last,
-.dv-tab-staff > a,
-.dv-tab-search,
-.dv-tab-news,
-.dv-tab-links,
-.dv-tab-plot,
-.dv-tab-logo {
-  border: 1px solid var(--a7);
-  padding: 8px;
-  background: var(--fp);
-}
+.dv-perfil, #form_confirm, #frmAgreement, .dv-post-options, #postingbox, #preview, #dv-mp-tabs, .dv-mp-list, .dv-simple-profile, .dv-simple-post-in, .dv-mp-acts, .dv-box, #cp-main, #quick_reply, .dv-postbody, .dv-admin, .action-box, .dv-page-tt, .pagination, .forumbg, .dv-afis-eli, .dv-afis-pe > div, .dv-afis-cre, .copyright a, .dv-stats-st > div, .dv-stats-num, .dv-stats-gr, .dv-stats-tt, .dv-stats-img, .dv-utiss, .dv-foro, .dv-cc, .dv-t-last, .dv-tab-staff > a, .dv-tab-search, .dv-tab-news, .dv-tab-links, .dv-tab-plot, .dv-tab-logo { border: 1px solid var(--a7); padding: 8px; background: var(--fp); }
 /***hover***/
-table.table1 tbody tr:hover,
-table.table1 tbody tr.hover,
-.dv-dcr-img > div:hover,
-dl.codebox code:hover,
-.spoiler_content:hover,
-.dv-page-actions a[href*="newtopic"],
-.dv-perfil-po a.this,
-.dv-perfil-po a:hover,
-.dv-perfil-aa a:hover,
-#dv-mp-tabs a:hover,
-.dv-mp-list-row:hover,
-.dv-simple-post-mp a:hover,
-.dv-member-row:hover,
-.dv-post-men i:hover,
-.dv-post-action a:hover,
-.dv-admin > a:hover,
-.dv-foro-tt:hover > *,
-.dv-page-actions a:hover,
-.pagination > span a:hover,
-.copyright a:hover,
-.dv-foro-in > a:hover,
-.dv-utiss > a:hover,
-.dv-navabar a:hover,
-.dv-tab-links a:hover {
-  background: var(--a3);
-}
-div .dv-chat *,
-.dv-perfil-ico > div *,
-.dv-post-icon *,
-.dv-postp-img * {
+table.table1 tbody tr:hover, table.table1 tbody tr.hover, .dv-dcr-img > div:hover, dl.codebox code:hover, .spoiler_content:hover, .dv-page-actions a[href*="newtopic"], .dv-perfil-po a.this, .dv-perfil-po a:hover, .dv-perfil-aa a:hover, #dv-mp-tabs a:hover, .dv-mp-list-row:hover, .dv-simple-post-mp a:hover, .dv-member-row:hover, .dv-post-men i:hover, .dv-post-action a:hover, .dv-admin > a:hover, .dv-foro-tt:hover > *, .dv-page-actions a:hover, .pagination > span a:hover, .copyright a:hover, .dv-foro-in > a:hover, .dv-utiss > a:hover, .dv-navabar a:hover, .dv-tab-links a:hover { background: var(--a3); }
+div .dv-chat *, .dv-perfil-ico > div *, .dv-post-icon *, .dv-postp-img * {
   font-size: 0;
   padding: 0 !important;
   border: none !important;
