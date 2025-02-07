@@ -1863,8 +1863,6 @@ border: 0 !important;
 }
 
 .dv-post-award .dv-tab-tt {
-  border-top: 1px solid var(--a7);
-  margin-top: 8px;
 }
 .award_tooltiptext {
   top: calc(100% + 10px);
