@@ -29,7 +29,7 @@
   --a4: #327783;
   --a5: #a8a8a8;
   --a6: #4c55a3;
-  --a7: #5a6880;
+  --a7: #8d97a9; /*#5a6880;*/
   --T0: #ffffff00;
   --text1: #899da7;
   --barv: #1b1b1c;
@@ -715,18 +715,9 @@ a.dv-nav-home,
 }
 .dv-tab-tt {
   margin: -8px -8px 8px;
-  padding: 8px;
-  border-bottom: 1px solid var(--a7);
 }
 .dv-tab-tt > div {
   padding: 8px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 3px;
-  text-shadow: var(--t1);
-  background: var(--a1);
-  border: 1px solid var(--a3);
 }
 .dv-tab-search-scr {
   display: flex;
@@ -1856,14 +1847,15 @@ content: "";
 }
 
 .dv-post-award {
-border-radius: 15px;
+border-radius: 40px 0;
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
     border: 2px solid #e3e3e3;
     padding: 5px;
-    background-size: cover;
-    background: #e9e9e9d9;
+    background: #1b1b1c;
+    top: 5px;
+    margin: 5px;
 }
 
 div.award {
