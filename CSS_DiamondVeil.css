@@ -717,7 +717,7 @@ a.dv-nav-home,
   margin: -8px -8px 8px;
 }
 .dv-tab-tt > div {
-  padding: 8px;
+background: transparent !important;
 }
 .dv-tab-search-scr {
   display: flex;
