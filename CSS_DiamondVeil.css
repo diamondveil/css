@@ -1846,6 +1846,11 @@ content: "";
     bottom: 15px;
 }
 
+.dv-perfil-awards .award {
+  flex: 0 0 auto;
+  transition: transform 0.5s ease-in-out;
+}
+
 .dv-post-award {
 border-radius: 40px 0;
     position: relative;
@@ -1921,7 +1926,11 @@ border: 0 !important;
 .dv-perfil-awards > div {
   margin: 10px;
   display: flex;
-  overflow: auto hidden;
+  gap: 10px; /* Espacio entre medallas */
+  overflow: hidden; /* Ocultar medallas que salgan del contenedor */
+  white-space: nowrap;
+  width: 100%; /* O el tamaño que prefieras */
+  position: relative;
 }
 
 /* Ocultar los íconos por defecto */
